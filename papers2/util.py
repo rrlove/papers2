@@ -5,7 +5,7 @@ import re
 import sys
 
 from argparse import ArgumentParser
-from ConfigParser import SafeConfigParser as ConfigParser
+from configparser import SafeConfigParser as ConfigParser
 
 def read_property_file(f, defaults=None):
     config = ConfigParser(defaults)
