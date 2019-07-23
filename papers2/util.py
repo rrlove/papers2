@@ -100,7 +100,7 @@ def enum(name, **enums):
     _enums = enums.copy()
     _enums["__names__"] = list(n for n in enums.keys())
     _enums["__values__"] = list(v for v in enums.values())
-    _enums["__reverse_dict__"] = dict((value, key) for key,value in enums.iteritems())
+    _enums["__reverse_dict__"] = dict((value, key) for key,value in enums.items())
     return type(name, (), _enums)
     
 class JSONWriter(object):
